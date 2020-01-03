@@ -1,0 +1,19 @@
+<mat-grid-list flex cols="2" rowHeight="1:1.15">
+    <mat-grid-tile
+        *ngFor="let tile of myAntomy">
+        <mat-card  >
+          <mat-card-header>
+            <mat-card-title> {{tile.title}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src={{tile.image_cardview}} alt={{tile.alttext}}>
+          <mat-card-content>
+            {{tile.desc}}
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-icon-button color="warn" (click)='redirectPage()'>
+                <mat-icon>launch</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

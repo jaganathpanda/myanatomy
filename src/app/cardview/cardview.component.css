@@ -1,0 +1,10 @@
+.example-card {
+    max-width: 400px;
+  }
+  mat-grid-list{
+    margin: 30px 240px auto 240px;
+  }
+  
+  .mat-card img{
+    width: 70%;
+  }
